@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.bannerContainer {
+  width: 100%;
+  height: 22rem;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.bannerInfoContainer {
+  height: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bannerImg {
+  position: absolute;
+  object-fit: cover;
+  border-radius: $radius;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.bannerTitle {
+  color: $yellow;
+  font-size: 1.5rem;
+}
+
+.bannerMovieTitle {
+  color: $accent-color;
+  font-size: 3rem;
+}
+
+.bannerTitleInfo {
+  color: $text-color;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
