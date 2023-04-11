@@ -37,7 +37,21 @@
 
 .bannerTitleInfo {
   color: $text-color;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+@media (max-width: $bp-tablet) {
+  .bannerInfoContainer {
+    padding: 1rem;
+  }
+
+  .bannerTitle {
+    font-size: 1rem;
+  }
+
+  .bannerMovieTitle {
+    font-size: 2rem;
+  }
 }

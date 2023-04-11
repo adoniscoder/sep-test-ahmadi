@@ -14,3 +14,9 @@ header {
   color: $accent-color;
   font-size: 4rem;
 }
+
+@media (max-width: $bp-tablet) {
+  .title {
+    font-size: 2rem;
+  }
+}

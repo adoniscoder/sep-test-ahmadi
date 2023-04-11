@@ -1,12 +1,16 @@
 // Color Variables
 $background-color: #14161f;
 $text-color: #494b50;
+$text-color-100: #cbcbcb;
+$text-color-300: #979798;
+$text-color-700: #43444a;
 $accent-color: #fff;
 $yellow: #d8b96f;
 
 // Media query sizes
 $mediaMaxWidth: 1260px;
-$bp-tablet: 768px;
+// iPad Air breakpoint
+$bp-tablet: 820px;
 
 //Radius
 $radius: 0.5rem;

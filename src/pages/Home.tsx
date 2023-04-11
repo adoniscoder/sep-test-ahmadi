@@ -1,8 +1,10 @@
-import { Banner, Content, Header, Spinner } from "@/components";
+import { Banner, Content, Header, RecentMovies, Spinner } from "@/components";
 import { useGetMovies } from "@/hooks";
 
 const Home = () => {
   const { data, isLoading } = useGetMovies();
+
+  console.log("-> ", data);
 
   if (isLoading) {
     return <Spinner />;
@@ -12,6 +14,7 @@ const Home = () => {
     <Content>
       <Header />
       <Banner />
+      <RecentMovies movies={data?.Search} />
     </Content>
   );
 };
