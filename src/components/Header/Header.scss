@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: $accent-color;
+  font-size: 4rem;
+}
