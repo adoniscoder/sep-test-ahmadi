@@ -1,13 +1,13 @@
-import "./styles/App.scss";
-import { Content, Header } from "@/components";
+import { QueryClientProvider, QueryClient } from "react-query";
+import { Home } from "./pages";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <Content>
-        <Header />
-      </Content>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Home />
+    </QueryClientProvider>
   );
 }
 
