@@ -4,8 +4,6 @@ import { useGetMovies } from "@/hooks";
 const Home = () => {
   const { data, isLoading } = useGetMovies();
 
-  console.log("-> ", data);
-
   if (isLoading) {
     return <Spinner />;
   }
